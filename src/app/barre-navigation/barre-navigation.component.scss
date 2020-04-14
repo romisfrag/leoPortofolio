@@ -6,16 +6,10 @@
 .buttonNavBar {
   float: left;
   display: block;
-  color:black;
   text-align: center;
   padding: 14px;
   text-decoration: none;
+  font-family: normalSmallFont;
 }
 
-.sticky{
-  position: fixed;
-  top: 0;
-  overflow: hidden;
-  z-index: 10;
-  width: 100%;
-}
+

@@ -15,6 +15,8 @@ import { ConstantesService } from './services/constantes.service';
 
 
 import { Routes, RouterModule } from '@angular/router';
+import { ImageGaleryComponent } from './image-galery/image-galery.component';
+import { BeforeScrollPageComponent } from './before-scroll-page/before-scroll-page.component';
 
 
 const appRoutes: Routes = [
@@ -31,7 +33,9 @@ const appRoutes: Routes = [
     BarreNavigationComponent,
     AccueilComponent,
     PhotographieComponent,
-    VideoComponent
+    VideoComponent,
+    ImageGaleryComponent,
+    BeforeScrollPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  height: 100%;
+  color: white;
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+  background-image:url("./assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+@font-face {
+  font-family: 'normalSmallFont';
+  src: url('assets/fonts/Avenir.ttc') format("opentype");
+}
+
+@font-face {
+  font-family: 'normalBigFont';
+  src: url('assets/fonts/AvenirNext.ttc') format("opentype");
+}
+
