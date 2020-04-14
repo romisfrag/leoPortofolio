@@ -23,7 +23,7 @@ const appRoutes: Routes = [
   { path: 'accueil', component: AccueilComponent },
   { path: 'photographie', component: PhotographieComponent },
   { path: 'video', component: VideoComponent },
-  { path: '', component: AccueilComponent }
+  { path: '', redirectTo: '/accueil', pathMatch: 'full' }
 ];
 
 @NgModule({
