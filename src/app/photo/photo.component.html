@@ -1,11 +1,19 @@
-<div class="containerPhoto">
- <img [src]="getPathName(projetInput)" class="photo">
- <div class="legende">
-   <div class="premierePartie">
-     {{ premierePartie }}
-   </div>
-   <div class="secondePartie">
-    {{ secondePartie }}
-   </div>
- </div>
+<!-- <div *ngIf="projetInput.portrait && !gauche" class="containerPlacementDroit">
+<div *ngIf="!projetInput.portrait && chrome" class="containerPlacementGauche">
+<div *ngIf="!projetInput.portrait && !chrome" class="containerPlacementGauche"> -->
+<div [class.containerPlacementGauche]="projetInput.portrait && gauche"
+[class.containerPlacementDroit]="projetInput.portrait && !gauche"
+[class.photoPaysageChrome]="!projetInput.portrait && chrome"
+[class.photoPaysageOther]="!projetInput.portrait && !chrome">
+ <div class="containerPhoto">
+  <img [src]="getPathName(projetInput)" class="photo">
+  <div class="legende">
+    <div class="premierePartie">
+      {{ premierePartie }} -
+    </div>
+    <div class="secondePartie">
+      {{ secondePartie }}
+    </div>
+  </div>
+  </div>
 </div>

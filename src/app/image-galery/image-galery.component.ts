@@ -15,26 +15,24 @@ export class ImageGaleryComponent implements OnInit {
   @Input() filtre: string;
 
   listeProjets: Projet[];
-  gauche = true;
-  chrome: boolean;
+  gauche = false;
 
-  constructor(private projetsService: ProjetsService, private constantesService: ConstantesService) {
-    // Detection pour la rotation d'image
-   this.chrome = (this.constantesService.getBrowserName().includes('chrome'));
+
+  constructor(private projetsService: ProjetsService) {
   }
 
   ngOnInit() {
     this.listeProjets = this.projetsService.getListeProjetFiltre(this.filtre);
   }
 
-
-
-  public getGauche() {
-    return this.gauche;
-  }
   public getAndChangeGauche() {
     this.gauche = !this.gauche;
-    return this.gauche;
+    if (this.gauche) {
+      return true;
+    } else {
+      return false;
+    }
   }
+
 
 }

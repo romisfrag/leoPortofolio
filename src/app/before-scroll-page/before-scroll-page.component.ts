@@ -27,7 +27,6 @@ export class BeforeScrollPageComponent implements OnInit, AfterViewInit {
 
   @HostListener('window:scroll', ['$event']) handleScroll() {
     const windowScroll = window.pageYOffset;
-    console.log('windowScroll : ' + windowScroll + 'elementPosition' + this.elementPosition );
     if (windowScroll >= this.elementPosition) {
       this.sticky = true;
     } else {

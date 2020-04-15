@@ -1,3 +1,36 @@
+.containerPlacement {
+  margin-top: 5%;
+  position: relative;
+  width: 33%;
+  height: auto;
+}
+
+.containerPlacementGauche {
+  @extend .containerPlacement;
+  left: 20%;
+}
+
+.containerPlacementDroit {
+  @extend .containerPlacement;
+  left: 50%;
+}
+
+
+.photoPaysageChrome {
+  position: relative;
+  -webkit-transform:rotate(90deg);
+  width: 50%;
+  left: 25%
+}
+
+.photoPaysageOther {
+  margin-top: 5%;
+  position: relative;
+  image-orientation: from-image;
+  width: 70%;
+  left: 15%
+}
+
 .containerPhoto {
   width: 100%;
   display: flex;
