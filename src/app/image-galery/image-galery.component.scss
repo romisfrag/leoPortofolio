@@ -1,0 +1,46 @@
+.containerGalery {
+  position: relative;
+  width: 100%;
+}
+
+.containerPhotoCaption {
+ width: 100%;
+}
+
+.photoCaptionAside {
+
+}
+
+.photo{
+  margin-top: 5%;
+  position: relative;
+  width: 33%;
+  height: auto;
+}
+
+.photoPaysageChrome {
+  position: relative;
+  -webkit-transform:rotate(90deg);
+  width: 50%;
+  left: 25%
+}
+
+.photoPaysageOther {
+  position: relative;
+  image-orientation: from-image;
+  width: 70%;
+  left: 15%
+}
+
+.photoPortraitGauche {
+  @extend .photo;
+  left: 20%;
+}
+
+.photoPortraitDroit {
+  @extend .photo;
+  left: 50%;
+}
+
+.legende {
+}

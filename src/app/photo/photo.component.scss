@@ -1,0 +1,26 @@
+.containerPhoto {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.legende {
+  display: flex;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: large;
+}
+
+.premierePartie {
+  text-transform: uppercase;
+  font-family: normalBigFont;
+}
+
+.secondePartie {
+  font-family: normalSmallFont;
+}
+
+.photo {
+  width: 90%;
+}

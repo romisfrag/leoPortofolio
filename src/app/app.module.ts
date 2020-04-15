@@ -17,6 +17,8 @@ import { ConstantesService } from './services/constantes.service';
 import { Routes, RouterModule } from '@angular/router';
 import { ImageGaleryComponent } from './image-galery/image-galery.component';
 import { BeforeScrollPageComponent } from './before-scroll-page/before-scroll-page.component';
+import { ProjetsService } from './services/projets.service';
+import { PhotoComponent } from './photo/photo.component';
 
 
 const appRoutes: Routes = [
@@ -35,14 +37,16 @@ const appRoutes: Routes = [
     PhotographieComponent,
     VideoComponent,
     ImageGaleryComponent,
-    BeforeScrollPageComponent
+    BeforeScrollPageComponent,
+    PhotoComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
-    ConstantesService
+    ConstantesService,
+    ProjetsService
   ],
   bootstrap: [AppComponent]
 })
