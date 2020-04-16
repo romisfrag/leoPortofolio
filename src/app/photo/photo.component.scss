@@ -17,11 +17,14 @@
 
 
 .photoPaysageChrome {
+  margin-top: 5%;
   position: relative;
-  -webkit-transform:rotate(90deg);
-  width: 50%;
-  left: 25%
+  // transform: rotate(90deg);
+  // -webkit-transform:rotate(90deg);
+  width: 70%;
+  left: 15%
 }
+
 
 .photoPaysageOther {
   margin-top: 5%;
@@ -37,6 +40,7 @@
   flex-direction: row;
   align-items: flex-end;
 }
+
 
 .legende {
   display: flex;
@@ -56,4 +60,15 @@
 
 .photo {
   width: 90%;
+}
+
+.boutonPhoto {
+  position: absolute;
+  background-color: red;
+  opacity: 0.5;
+  z-index: 10;
+  top: 0px;
+  left: 0px;
+  width: 90%;
+  height: 100%;
 }

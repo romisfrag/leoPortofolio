@@ -17,7 +17,7 @@ export class ConstantesService {
   }
 
   public getBrowserName() {
-    const agent = window.navigator.userAgent.toLowerCase()
+    const agent = window.navigator.userAgent.toLowerCase();
     switch (true) {
       case agent.indexOf('edge') > -1:
         return 'edge';
