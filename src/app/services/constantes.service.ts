@@ -2,6 +2,17 @@ export class ConstantesService {
 
   routesListe: string[] = ['accueil', 'photographie', 'video'];
 
+  // Variable globale permettant de determiner si on veut avoir les trucs a gauche ou à droite
+  private gauchePrecedent = true;
+
+  public getGauchePrecedent() {
+    return this.gauchePrecedent;
+  }
+
+  public switchGauchePrecedent() {
+    this.gauchePrecedent = !this.gauchePrecedent;
+  }
+
   public getRouteListe() {
     return this.routesListe;
   }

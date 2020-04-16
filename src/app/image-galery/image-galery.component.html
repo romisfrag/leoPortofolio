@@ -2,7 +2,7 @@
 <!-- ici il vas y avoir un ng for des photos-->
 <div *ngFor="let projet of listeProjets" class="containerPhotoCaption">
 
-  <app-photo [projetInput]="projet" gaucheInput="true"></app-photo>
+  <app-photo [projetInput]="projet"></app-photo>
   <!-- <app-photo *ngIf="projet.portrait && getGauche()" [projetInput]="projet" class="photoPortraitGauche"></app-photo>
     <app-photo *ngIf="projet.portrait && getAndChangeGauche()" [projetInput]="projet" class="photoPortraitDroit"></app-photo>
     <app-photo *ngIf="!projet.portrait && chrome" [projetInput]="projet" class="photoPortraitGauche"></app-photo>
