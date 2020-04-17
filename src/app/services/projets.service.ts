@@ -16,7 +16,7 @@ export class ProjetsService {
       description: 'ceci est la description du projet addias il faut voir si je peux faire des retour a la' +
       'ligne quand la ligne est trop longue tatatatatatijdsfjsdhfsjdhfisjfdhisdhf et maintenant un ' +
       'retour a la ligne voulu <br> jespere que ça a marche',
-      listeOrganisationPhoto: [0, 0, 0, 0, 0]
+      listeOrganisationPhoto: [1, 0 , 0 , 0, 0]
     },
     {
       folderName: 'BVB-PSG',
@@ -64,7 +64,7 @@ export class ProjetsService {
   }
 
   public getUrlImgProjetIndex(projet: Projet, index: number) {
-    return '../../assets/projets/' + projet.folderName + '/Photo/'+ index + '.jpg';
+    return '../../assets/projets/' + projet.folderName + '/Photo/' + index + '.jpg';
   }
 
 

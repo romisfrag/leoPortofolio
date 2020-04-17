@@ -24,10 +24,10 @@ import { ProjetImageGalerieComponent } from './projet-image-galerie/projet-image
 
 
 const appRoutes: Routes = [
-  { path: 'accueil', component: AccueilComponent },
-  { path: 'photographie', component: PhotographieComponent },
-  { path: 'video', component: VideoComponent },
-  { path: '', redirectTo: '/accueil', pathMatch: 'full' },
+  { path: 'Accueil', component: AccueilComponent },
+  { path: 'Photographie', component: PhotographieComponent },
+  { path: 'Vidéo', component: VideoComponent },
+  { path: '', redirectTo: '/Accueil', pathMatch: 'full' },
   { path: '**', component:  ProjetPageComponent}
 ];
 
@@ -46,7 +46,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes, {scrollPositionRestoration: 'enabled'})
   ],
   providers: [
     ConstantesService,

@@ -1,6 +1,6 @@
 export class ConstantesService {
 
-  routesListe: string[] = ['accueil', 'photographie', 'video'];
+  routesListe: string[] = ['Accueil', 'Photographie', 'Vidéo', 'Print', 'Ux'];
 
   // Variable globale permettant de determiner si on veut avoir les trucs a gauche ou à droite
   private gauchePrecedent = true;
@@ -18,6 +18,9 @@ export class ConstantesService {
   }
 
   public getRoutListeWithoutElement(elem: string) {
+    // Permet de gérer le cas particulier vidéo
+    elem = elem.replace('%C3%A9', 'é');
+
     const returnListe: string[] = [];
     for (let i = 0; i < this.routesListe.length; i++) {
       if (!this.routesListe[i].includes(elem)) {

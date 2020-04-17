@@ -12,6 +12,8 @@ export class ProjetImageGalerieComponent implements OnInit {
   @Input() projetInput: Projet;
   listePhoto: number[];
 
+  compteurGrandePhoto = 0;
+
 
   constructor(private projetsService: ProjetsService) {
   }
@@ -26,4 +28,16 @@ export class ProjetImageGalerieComponent implements OnInit {
     return this.projetsService.getUrlImgProjetIndex(this.projetInput, index);
   }
 
+  public genererateGridColumnFirstArg(index: number) {
+
+  }
+  public genererateGridColumnSecondArg(index: number) {
+
+  }
+  public genererateGridRowFirstArg(index: number) {
+
+  }
+  public genererateGridRowSecondArg(index: number) {
+
+  }
 }
