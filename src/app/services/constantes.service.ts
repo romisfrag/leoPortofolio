@@ -9,6 +9,10 @@ export class ConstantesService {
     return this.gauchePrecedent;
   }
 
+  public resetGauche() {
+    this.gauchePrecedent = true;
+  }
+
   public switchGauchePrecedent() {
     this.gauchePrecedent = !this.gauchePrecedent;
   }

@@ -11,6 +11,7 @@ import { ConstantesService } from '../services/constantes.service';
 export class PhotoComponent implements OnInit {
 
   @Input() projetInput: Projet;
+  @Input() index: number;
 
   premierePartie: string;
   secondePartie: string;
@@ -26,6 +27,9 @@ export class PhotoComponent implements OnInit {
   ngOnInit() {
     this.premierePartie = this.projetInput.legendeTitle;
     this.secondePartie = this.projetInput.legendeTexte;
+    if (this.index === 0) {
+      this.constantesService.resetGauche();
+    }
     if (this.projetInput.portrait) {
       this.gauche = this.constantesService.getGauchePrecedent();
       this.constantesService.switchGauchePrecedent();

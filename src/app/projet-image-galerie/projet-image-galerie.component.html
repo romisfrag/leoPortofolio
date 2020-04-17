@@ -5,7 +5,7 @@
   </div>
 </div> -->
 <div class="containerProjetImageGalerie">
-  <div *ngFor="let num of listePhoto;  let i=index" [class.elementGridPortraitGrande]="num === 1">
+  <div *ngFor="let num of listePhoto;  let i=index" [class.elementGridPortraitGrande]="num === 1" [class.elementGridPaysage]="num === 2">
     <img [src]="getTheUrlImgProjetIndex(i)" class="photo">
   </div>
 </div>

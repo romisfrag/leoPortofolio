@@ -27,7 +27,7 @@ export class ProjetsService {
       legendeTitle: 'PSG',
       legendeTexte: 'Ultra : PSG vs BVB',
       description: 'ceci est la description du projet PSG',
-      listeOrganisationPhoto: [2, 2, 2, 2, 2]
+      listeOrganisationPhoto: [2, 0, 0, 0, 0]
     },
     {
       folderName: 'Jardin_Noir-Djibz',
