@@ -45,11 +45,19 @@
   font-size: small;
 }
 
-.containerPhoto {
+.containerPhotoPortrait {
   position: absolute;
   top: 10%;
   left: 10%;
   width: 25%;
+}
+
+.containerPhotoPaysage {
+  position: absolute;
+  top: 15%;
+  left: 8%;
+  width: 40%;
+  z-index: -1;
 }
 
 .photo {

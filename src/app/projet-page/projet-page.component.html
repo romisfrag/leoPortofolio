@@ -11,7 +11,7 @@
   <div class="containerDescription">
     {{ projet.description }}
   </div>
-  <div class="containerPhoto">
+  <div [class.containerPhotoPortrait]="projet.portrait" [class.containerPhotoPaysage]="!projet.portrait">
     <img [src]="getPathName(projet)" class="photo">
   </div>
   <div class="containerAppBar" #stickyMenu [class.sticky] = "sticky">
