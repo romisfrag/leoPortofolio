@@ -7,4 +7,6 @@ export class Projet {
   legendeTitle: string;
   legendeTexte: string;
   description: string;
+  // 0 singinie portrait normal, 1 signifie grand portrait, 2 signifie paysage
+  listeOrganisationPhoto: number[];
 }

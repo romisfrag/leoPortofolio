@@ -1,0 +1,22 @@
+<div class="containerfullScreen">
+  <div class="containerTitleDateLegende">
+    <h1 class="title"> {{ projet.titre }} </h1>
+    <div class="date">
+      {{ projet.date | date:'mm. y' }}
+    </div>
+    <div class="categorie">
+      {{ projet.categorie }}
+    </div>
+  </div>
+  <div class="containerDescription">
+    {{ projet.description }}
+  </div>
+  <div class="containerPhoto">
+    <img [src]="getPathName(projet)" class="photo">
+  </div>
+  <div class="containerAppBar" #stickyMenu [class.sticky] = "sticky">
+    <app-barre-navigation></app-barre-navigation>
+  </div>
+</div>
+<app-projet-image-galerie [projetInput]="projet"></app-projet-image-galerie>
+

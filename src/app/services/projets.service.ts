@@ -6,14 +6,17 @@ export class ProjetsService {
   // liste des projets
   private listeProjets: Projet[] = [
     {
-      folderName: 'Adidas-Elisa pineau',
+      folderName: 'Adidas-Elisa_pineau',
       categorie: 'video',
-      titre: 'adidas',
+      titre: 'adidas super long titre pour voir',
       date: new Date('December 17, 1995 03:24:00'),
       portrait: true,
       legendeTitle: 'adidas',
       legendeTexte: 'Elisa Pineau',
-      description: 'ceci est la description du projet addias'
+      description: 'ceci est la description du projet addias il faut voir si je peux faire des retour a la' +
+      'ligne quand la ligne est trop longue tatatatatatijdsfjsdhfsjdhfisjfdhisdhf et maintenant un ' +
+      'retour a la ligne voulu <br> jespere que ça a marche',
+      listeOrganisationPhoto: [0, 0, 0, 0, 0]
     },
     {
       folderName: 'BVB-PSG',
@@ -23,17 +26,19 @@ export class ProjetsService {
       portrait: false,
       legendeTitle: 'PSG',
       legendeTexte: 'Ultra : PSG vs BVB',
-      description: 'ceci est la description du projet PSG'
+      description: 'ceci est la description du projet PSG',
+      listeOrganisationPhoto: [2, 2, 2, 2, 2]
     },
     {
-      folderName: 'Jardin Noir-Djibz',
+      folderName: 'Jardin_Noir-Djibz',
       categorie: 'photographie',
       titre: 'Jardin Noir - Djibz',
       date: new Date('December 17, 1995 03:24:00'),
       portrait: true,
       legendeTitle: 'Jardin Noir',
       legendeTexte: 'Djibz',
-      description: 'ceci est la description du projet Djibz'
+      description: 'ceci est la description du projet Djibz',
+      listeOrganisationPhoto: [0, 0]
     }
   ];
 
@@ -56,6 +61,19 @@ export class ProjetsService {
 
   public getUrlImgProjet(projet: Projet) {
     return '../../assets/projets/' + projet.folderName + '/Photo/0.png';
+  }
+
+  public getUrlImgProjetIndex(projet: Projet, index: number) {
+    return '../../assets/projets/' + projet.folderName + '/Photo/'+ index + '.jpg';
+  }
+
+
+  public getProjetByFolderName(folder: string) {
+    for (let i = 0; i < this.listeProjets.length; i++) {
+      if (folder.includes(this.listeProjets[i].folderName)) {
+        return this.listeProjets[i];
+      }
+    }
   }
 
 

@@ -6,7 +6,7 @@
 [class.photoPaysageChrome]="!projetInput.portrait && chrome"
 [class.photoPaysageOther]="!projetInput.portrait && !chrome">
  <div class="containerPhoto">
-  <a routerLink="/photographie" class="boutonPhoto"></a>
+  <a routerLink="/{{ projetInput.folderName }}" class="boutonPhoto"></a>
   <img [src]="getPathName(projetInput)" class="photo">
   <div class="legende">
     <div class="premierePartie">

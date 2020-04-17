@@ -1,0 +1,12 @@
+<!-- <div class="containerProjetImageGalerie">
+  <div *ngFor="let num of listePhoto;  let i=index" class="photoContainer">
+    <img *ngIf="i === 0"[src]="getTheUrlImgProjetIndex(i)" class="photo0">
+    <img *ngIf="i >= 0"[src]="getTheUrlImgProjetIndex(i)" class="photo1">
+  </div>
+</div> -->
+<div class="containerProjetImageGalerie">
+  <div *ngFor="let num of listePhoto;  let i=index" [class.photoContainer1] = "i > 0" [class.photoContainer0]="i === 0">
+    <img [src]="getTheUrlImgProjetIndex(i)" class="photo">
+  </div>
+</div>
+

@@ -28,7 +28,6 @@ export class PhotoComponent implements OnInit {
     this.secondePartie = this.projetInput.legendeTexte;
     if (this.projetInput.portrait) {
       this.gauche = this.constantesService.getGauchePrecedent();
-      console.log('gauche : ' + this.gauche);
       this.constantesService.switchGauchePrecedent();
     }
   }
