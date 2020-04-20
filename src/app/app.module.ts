@@ -10,7 +10,8 @@ import { PhotographieComponent } from './photographie/photographie.component';
 import { VideoComponent } from './video/video.component';
 import { PhotoComponent } from './photo/photo.component';
 import { ProjetPageComponent } from './projet-page/projet-page.component';
-
+import { PrintComponent } from './print/print.component';
+import { UxComponent } from './ux/ux.component';
 /* Services */
 import { ConstantesService } from './services/constantes.service';
 
@@ -20,6 +21,8 @@ import { ImageGaleryComponent } from './image-galery/image-galery.component';
 import { BeforeScrollPageComponent } from './before-scroll-page/before-scroll-page.component';
 import { ProjetsService } from './services/projets.service';
 import { ProjetImageGalerieComponent } from './projet-image-galerie/projet-image-galerie.component';
+import { ProjetFooterComponent } from './projet-footer/projet-footer.component';
+
 
 
 
@@ -27,6 +30,8 @@ const appRoutes: Routes = [
   { path: 'Accueil', component: AccueilComponent },
   { path: 'Photographie', component: PhotographieComponent },
   { path: 'Vidéo', component: VideoComponent },
+  { path: 'Print', component: PrintComponent },
+  { path: 'Ux', component: UxComponent },
   { path: '', redirectTo: '/Accueil', pathMatch: 'full' },
   { path: '**', component:  ProjetPageComponent}
 ];
@@ -42,7 +47,10 @@ const appRoutes: Routes = [
     BeforeScrollPageComponent,
     PhotoComponent,
     ProjetPageComponent,
-    ProjetImageGalerieComponent
+    ProjetImageGalerieComponent,
+    PrintComponent,
+    UxComponent,
+    ProjetFooterComponent
   ],
   imports: [
     BrowserModule,

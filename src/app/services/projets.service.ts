@@ -16,7 +16,11 @@ export class ProjetsService {
       description: 'ceci est la description du projet addias il faut voir si je peux faire des retour a la' +
       'ligne quand la ligne est trop longue tatatatatatijdsfjsdhfsjdhfisjfdhisdhf et maintenant un ' +
       'retour a la ligne voulu <br> jespere que ça a marche',
-      listeOrganisationPhoto: [1, 0 , 0 , 0, 0]
+      listeOrganisationPhoto: [1, 0 , 0 , 0, 0],
+      client: 'bvb',
+      lieux: 'stade',
+      format: '1080*900',
+      photographie: 'Léonard BEHNAMOU'
     },
     {
       folderName: 'BVB-PSG',
@@ -27,7 +31,11 @@ export class ProjetsService {
       legendeTitle: 'PSG',
       legendeTexte: 'Ultra : PSG vs BVB',
       description: 'ceci est la description du projet PSG',
-      listeOrganisationPhoto: [2, 0, 0, 0, 0]
+      listeOrganisationPhoto: [2, 0, 0, 0, 0],
+      client: 'bvb',
+      lieux: 'stade',
+      format: '1080*900',
+      photographie: 'Léonard BEHNAMOU'
     },
     {
       folderName: 'Jardin_Noir-Djibz',
@@ -38,7 +46,11 @@ export class ProjetsService {
       legendeTitle: 'Jardin Noir',
       legendeTexte: 'Djibz',
       description: 'ceci est la description du projet Djibz',
-      listeOrganisationPhoto: [0, 0]
+      listeOrganisationPhoto: [0, 0],
+      client: 'bvb',
+      lieux: 'stade',
+      format: '1080*900',
+      photographie: 'Léonard BEHNAMOU'
     }
   ];
 

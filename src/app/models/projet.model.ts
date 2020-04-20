@@ -9,4 +9,9 @@ export class Projet {
   description: string;
   // 0 singinie portrait normal, 1 signifie grand portrait, 2 signifie paysage
   listeOrganisationPhoto: number[];
+  // Pour le footer
+  client: string;
+  lieux: string;
+  format: string;
+  photographie: string;
 }
