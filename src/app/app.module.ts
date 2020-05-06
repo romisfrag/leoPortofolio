@@ -22,6 +22,7 @@ import { BeforeScrollPageComponent } from './before-scroll-page/before-scroll-pa
 import { ProjetsService } from './services/projets.service';
 import { ProjetImageGalerieComponent } from './projet-image-galerie/projet-image-galerie.component';
 import { ProjetFooterComponent } from './projet-footer/projet-footer.component';
+import { ProfilComponent } from './profil/profil.component';
 
 
 
@@ -32,6 +33,7 @@ const appRoutes: Routes = [
   { path: 'Vidéo', component: VideoComponent },
   { path: 'Print', component: PrintComponent },
   { path: 'Ux', component: UxComponent },
+  { path: 'Profil', component: ProfilComponent },
   { path: '', redirectTo: '/Accueil', pathMatch: 'full' },
   { path: '**', component:  ProjetPageComponent}
 ];
@@ -50,7 +52,8 @@ const appRoutes: Routes = [
     ProjetImageGalerieComponent,
     PrintComponent,
     UxComponent,
-    ProjetFooterComponent
+    ProjetFooterComponent,
+    ProfilComponent
   ],
   imports: [
     BrowserModule,

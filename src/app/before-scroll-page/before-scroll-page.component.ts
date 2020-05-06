@@ -11,6 +11,7 @@ export class BeforeScrollPageComponent implements OnInit, AfterViewInit {
   @ViewChild('stickyMenu') navBar: ElementRef;
 
   @Input() titre: string;
+  @Input() profil: boolean;
 
   elementPosition: any;
   sticky = false;
