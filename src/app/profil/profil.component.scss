@@ -1,0 +1,87 @@
+.containerPage {
+  position: relative;
+  width: 100%;
+}
+.containerTextePresentation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: normalSmallFont;
+  white-space: pre-line;
+  font-size: large;
+}
+
+.containerMeJoindre {
+  padding-top: 5%;
+  padding-bottom: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.texteMeJoindre {
+  font-family: normalSmallFont;
+}
+.textAdresseMail {
+  font-family: normalBigFont;
+  font-size: large;
+}
+
+
+.containerResume {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../assets/backgroundProfile.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.containerDroit {
+  padding-left: 60%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+
+  white-space: pre-line;
+  font-size: large;
+  font-family: normalSmallFont;
+}
+
+.containerGauche {
+  padding-left: 10%;
+  padding-right: 60%;
+  padding-bottom: 5%;
+
+
+  white-space: pre-line;
+  font-size: large;
+  text-align: right;
+  font-family: normalSmallFont;
+}
+
+.titreElement {
+  font-family: normalBigFont;
+}
+
+
+.containerButtonCv {
+  padding-top: 5%;
+  padding-bottom: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonCV {
+  z-index: 10;
+  font-family: normalBigFont;
+  font-size: x-large;
+  color: white;
+  text-decoration: none;
+}
