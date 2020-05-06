@@ -1,3 +1,8 @@
-<div class="navbar">
+<div *ngIf="!profil" class="navbar">
   <a *ngFor="let name of listeRoutes" routerLink="/{{ name }}" class="buttonNavBar"> {{ name }} </a>
+</div>
+<!-- Si ce n'est pas un profile -->
+<div *ngIf="profil" class="navbar">
+  <a href="https://www.instagram.com/benhamjunior/" target="_blank" class="buttonNavBar"> Instagram </a>
+  <a href="https://fr.linkedin.com/in/leonard-benhamou-4a4759aa" target="_blank" class="buttonNavBar"> Linkedin </a>
 </div>

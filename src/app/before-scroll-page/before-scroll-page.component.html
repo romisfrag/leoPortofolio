@@ -1,11 +1,11 @@
 <div class="containerfullScreen">
-  <div *ngIf="profil" class = containerButtonProfil>
+  <div *ngIf="!profil" class = containerButtonProfil>
     <a routerLink="/Profil" class="boutonProfil"> Profil </a>
   </div>
   <div class="containerTitle">
     {{ titre }}
   </div>
   <div class="containerAppBar" #stickyMenu [class.sticky] = "sticky">
-    <app-barre-navigation></app-barre-navigation>
+    <app-barre-navigation [profil]="profil"></app-barre-navigation>
   </div>
 </div>
