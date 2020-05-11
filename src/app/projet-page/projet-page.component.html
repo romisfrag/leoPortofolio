@@ -18,7 +18,7 @@
     <!-- Si c'est une video -->
     <div *ngIf="projet.videoPageBeforeScroll">
       <video controls width="80%">
-        <source src="../../assets/projets/Adidas-Elisa_pineau/Vidéo/ADIDAS ELisa Pineau.mp4"
+        <source [src]="getVideoPath()"
                 type="video/mp4">
         Sorry, your browser doesn't support embedded videos.
     </video>

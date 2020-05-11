@@ -31,6 +31,25 @@
   // grid-auto-rows: max-content;
 }
 
+.containerProjetImageGaleriePaysage {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerPhotoDroit {
+  padding-left: 30%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+}
+
+.containerPhotoGauche {
+  padding-left: 10%;
+  padding-right: 30%;
+  padding-bottom: 5%;
+}
+
 
 // il faut faire gaffe a donner l'index + 1
 .elementGridPortraitGrande {

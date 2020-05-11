@@ -4,13 +4,20 @@
     <img *ngIf="i >= 0"[src]="getTheUrlImgProjetIndex(i)" class="photo1">
   </div>
 </div> -->
-<!-- Agencement classique avec video en haut-->
+<!-- Agencement classique avec ou sans video en haut-->
 <div *ngIf="projetInput.templateAgencementPhotos == 0" class="containerProjetImageGalerie">
   <div *ngFor="let num of listePhoto;  let i=index" [class.elementGridPortraitGrande]="i == 4">
     <img [src]="getTheUrlImgProjetIndex(i)" class="photo">
   </div>
 </div>
-
+<!-- Agencement en mode full paysage -->
+<div *ngIf="projetInput.templateAgencementPhotos == 1" class="containerProjetImageGaleriePaysage">
+  <div *ngFor="let num of listePhoto;  let i=index">
+    <div  [class.containerPhotoDroit]="i % 2 == 0" [class.containerPhotoGauche]="i % 2 == 1" >
+       <img [src]="getTheUrlImgProjetIndex(i)" class="photo">
+    </div>
+  </div>
+</div>
 
 
 

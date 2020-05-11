@@ -32,6 +32,10 @@ export class ProjetPageComponent implements OnInit, AfterViewInit {
     return this.projetsService.getUrlImgProjet(projet);
   }
 
+  public getVideoPath() {
+    return this.projetsService.getUrlVideoBeforeScroll(this.projet);
+  }
+
   @HostListener('window:scroll', ['$event']) handleScroll() {
     const windowScroll = window.pageYOffset;
     if (windowScroll >= this.elementPosition) {

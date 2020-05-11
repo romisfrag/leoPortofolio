@@ -26,19 +26,15 @@ export class ProjetImageGalerieComponent implements OnInit {
   }
 
   public getTheUrlImgProjetIndex(index: number) {
+    // Si video alors la premiere est une png
+    if (this.projetInput.videoPageBeforeScroll && index === 0) {
+      return this.projetsService.getUrlImgProjet(this.projetInput);
+    }
+    // Si pas de video alors ça veut dire que il faut afficher la 0 en haut et pas en bas
+    if (!this.projetInput.videoPageBeforeScroll) {
+      index += 1;
+    }
     return this.projetsService.getUrlImgProjetIndex(this.projetInput, index);
   }
 
-  public genererateGridColumnFirstArg(index: number) {
-
-  }
-  public genererateGridColumnSecondArg(index: number) {
-
-  }
-  public genererateGridRowFirstArg(index: number) {
-
-  }
-  public genererateGridRowSecondArg(index: number) {
-
-  }
 }

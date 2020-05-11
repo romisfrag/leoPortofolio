@@ -25,6 +25,25 @@ export class ProjetsService {
       photographie: 'Léonard BEHNAMOU'
     },
     {
+      folderName: 'MrLenoir-Djibricil_Cisse',
+      categorie: 'photographie',
+      titre: 'MrLenoir - Djibricil Cisse',
+      date: new Date('December 17, 1995 03:24:00'),
+      portrait: true,
+      videoPageBeforeScroll: false,
+      legendeTitle: 'MrLenoir',
+      legendeTexte: 'Djibricil Cissé',
+      description: 'ceci est la description du projet Djibricil Cissé il faut voir si je peux faire des retour a la' +
+      'ligne quand la ligne est trop longue tatatatatatijdsfjsdhfsjdhfisjfdhisdhf et maintenant un ' +
+      'retour a la ligne voulu <br> jespere que ça a marche',
+      templateAgencementPhotos: 0,
+      nombrePhotos: 15,
+      client: 'bvb',
+      lieux: 'stade',
+      format: '1080*900',
+      photographie: 'Léonard BEHNAMOU'
+    },
+    {
       folderName: 'BVB-PSG',
       categorie: 'photographie',
       titre: 'BVB - PSG',
@@ -34,8 +53,8 @@ export class ProjetsService {
       legendeTitle: 'PSG',
       legendeTexte: 'Ultra : PSG vs BVB',
       description: 'ceci est la description du projet PSG',
-      templateAgencementPhotos: 0,
-      nombrePhotos: 0,
+      templateAgencementPhotos: 1,
+      nombrePhotos: 5,
       client: 'bvb',
       lieux: 'stade',
       format: '1080*900',
@@ -47,14 +66,14 @@ export class ProjetsService {
       titre: 'PSG - OM',
       date: new Date('December 17, 1995 03:24:00'),
       portrait: true,
-      videoPageBeforeScroll: false,
+      videoPageBeforeScroll: true,
       legendeTitle: 'PSG',
       legendeTexte: 'PSG - OM',
       description: 'ceci est la description du projet PSG OM il faut voir si je peux faire des retour a la' +
       'ligne quand la ligne est trop longue tatatatatatijdsfjsdhfsjdhfisjfdhisdhf et maintenant un ' +
       'retour a la ligne voulu <br> jespere que ça a marche',
       templateAgencementPhotos: 0,
-      nombrePhotos: 0,
+      nombrePhotos: 12,
       client: 'bvb',
       lieux: 'stade',
       format: '1080*900',
@@ -102,6 +121,10 @@ export class ProjetsService {
 
   public getUrlImgProjetIndex(projet: Projet, index: number) {
     return '../../assets/projets/' + projet.folderName + '/Photo/' + index + '.jpg';
+  }
+
+  public getUrlVideoBeforeScroll(projet: Projet) {
+    return '../../assets/projets/' + projet.folderName + '/Video/0.mp4';
   }
 
 
