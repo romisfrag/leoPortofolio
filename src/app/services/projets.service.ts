@@ -90,7 +90,7 @@ export class ProjetsService {
       legendeTexte: 'Djibz',
       description: 'ceci est la description du projet Djibz',
       templateAgencementPhotos: 0,
-      nombrePhotos: 0,
+      nombrePhotos: 2,
       client: 'bvb',
       lieux: 'stade',
       format: '1080*900',
