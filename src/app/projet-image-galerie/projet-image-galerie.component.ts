@@ -10,21 +10,22 @@ import { ProjetsService } from '../services/projets.service';
 export class ProjetImageGalerieComponent implements OnInit {
 
   @Input() projetInput: Projet;
-  listePhoto: number[];
 
   compteurGrandePhoto = 0;
-
+  listePhoto: any[] = [];
 
   constructor(private projetsService: ProjetsService) {
   }
 
   ngOnInit() {
     // le ng for est sur cette liste
-    this.listePhoto = this.projetInput.listeOrganisationPhoto;
+    // TODO this.listePhoto = this.projetInput.listeOrganisationPhoto;
+    for (let i = 0; i < this.projetInput.nombrePhotos; i++) {
+      this.listePhoto.push(0);
+    }
   }
 
   public getTheUrlImgProjetIndex(index: number) {
-    index += 1;
     return this.projetsService.getUrlImgProjetIndex(this.projetInput, index);
   }
 

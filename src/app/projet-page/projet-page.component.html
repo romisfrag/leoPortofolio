@@ -11,8 +11,19 @@
   <div class="containerDescription">
     {{ projet.description }}
   </div>
+
   <div [class.containerPhotoPortrait]="projet.portrait" [class.containerPhotoPaysage]="!projet.portrait">
-    <img [src]="getPathName(projet)" class="photo">
+    <!-- Si c'est une image avant le scroll down-->
+    <img *ngIf="!projet.videoPageBeforeScroll" [src]="getPathName(projet)" class="photo">
+    <!-- Si c'est une video -->
+    <div *ngIf="projet.videoPageBeforeScroll">
+      <video controls width="80%">
+        <source src="../../assets/projets/Adidas-Elisa_pineau/Vidéo/ADIDAS ELisa Pineau.mp4"
+                type="video/mp4">
+        Sorry, your browser doesn't support embedded videos.
+    </video>
+
+    </div>
   </div>
   <div class="containerAppBar" #stickyMenu [class.sticky] = "sticky">
     <app-barre-navigation></app-barre-navigation>

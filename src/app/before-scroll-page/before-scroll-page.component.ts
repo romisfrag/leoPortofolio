@@ -12,9 +12,12 @@ export class BeforeScrollPageComponent implements OnInit, AfterViewInit {
 
   @Input() titre: string;
   @Input() profil: boolean;
+  @Input() credit: boolean;
 
   elementPosition: any;
   sticky = false;
+
+
 
 
   constructor() { }

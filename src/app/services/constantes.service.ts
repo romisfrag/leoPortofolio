@@ -1,5 +1,6 @@
 export class ConstantesService {
 
+
   routesListe: string[] = ['Accueil', 'Photographie', 'Vidéo', 'Print', 'Ux'];
 
   // Variable globale permettant de determiner si on veut avoir les trucs a gauche ou à droite
@@ -20,6 +21,7 @@ export class ConstantesService {
   public getRouteListe() {
     return this.routesListe;
   }
+
 
   public getRoutListeWithoutElement(elem: string) {
     // Permet de gérer le cas particulier vidéo

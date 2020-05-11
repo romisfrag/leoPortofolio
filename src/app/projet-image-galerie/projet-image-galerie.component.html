@@ -4,9 +4,20 @@
     <img *ngIf="i >= 0"[src]="getTheUrlImgProjetIndex(i)" class="photo1">
   </div>
 </div> -->
-<div class="containerProjetImageGalerie">
-  <div *ngFor="let num of listePhoto;  let i=index" [class.elementGridPortraitGrande]="num === 1" [class.elementGridPaysage]="num === 2">
+<!-- Agencement classique avec video en haut-->
+<div *ngIf="projetInput.templateAgencementPhotos == 0" class="containerProjetImageGalerie">
+  <div *ngFor="let num of listePhoto;  let i=index" [class.elementGridPortraitGrande]="i == 4">
     <img [src]="getTheUrlImgProjetIndex(i)" class="photo">
   </div>
 </div>
+
+
+
+
+<!-- Agencement classique avec video en haut-->
+<!-- <div *ngIf="projetInput.templateAgencementPhotos == 0" class="containerProjetImageGalerie">
+  <div *ngFor="let num of listePhoto;  let i=index" [class.elementGridPortraitGrande]="i == 4" [class.elementGridPaysage]="num === 2">
+    <img [src]="getTheUrlImgProjetIndex(i)" class="photo">
+  </div>
+</div> -->
 

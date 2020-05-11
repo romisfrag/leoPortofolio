@@ -1,7 +1,18 @@
 <div class="containerfullScreen">
+  <!-- Partie pour le profil et les credits -->
+  <div *ngIf="profil" class = containerButtonAccueil>
+    <a routerLink="/Accueil" class="boutonProfil"> Accueil </a>
+  </div>
   <div *ngIf="!profil" class = containerButtonProfil>
     <a routerLink="/Profil" class="boutonProfil"> Profil </a>
   </div>
+  <div *ngIf="profil && !credit " class = containerButtonProfil>
+    <a routerLink="/Credit" class="boutonProfil"> Credit </a>
+  </div>
+
+
+
+  <!-- Partie comune -->
   <div class="containerTitle">
     {{ titre }}
   </div>

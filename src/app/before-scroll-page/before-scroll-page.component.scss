@@ -26,11 +26,19 @@
   right: 2%;
 }
 
+.containerButtonAccueil {
+  position: absolute;
+  z-index: 10;
+  top: 2%;
+  left: 2%;
+}
+
 .boutonProfil {
   font-family: normalSmallFont;
   text-shadow: 1px 1px 2px black;
   font-size: large;
   color: white;
+  text-decoration: none;
 }
 
 

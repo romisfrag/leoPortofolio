@@ -23,6 +23,7 @@ import { ProjetsService } from './services/projets.service';
 import { ProjetImageGalerieComponent } from './projet-image-galerie/projet-image-galerie.component';
 import { ProjetFooterComponent } from './projet-footer/projet-footer.component';
 import { ProfilComponent } from './profil/profil.component';
+import { CreditComponent } from './credit/credit.component';
 
 
 
@@ -34,6 +35,7 @@ const appRoutes: Routes = [
   { path: 'Print', component: PrintComponent },
   { path: 'Ux', component: UxComponent },
   { path: 'Profil', component: ProfilComponent },
+  { path: 'Credit', component: CreditComponent },
   { path: '', redirectTo: '/Accueil', pathMatch: 'full' },
   { path: '**', component:  ProjetPageComponent}
 ];
@@ -53,7 +55,8 @@ const appRoutes: Routes = [
     PrintComponent,
     UxComponent,
     ProjetFooterComponent,
-    ProfilComponent
+    ProfilComponent,
+    CreditComponent
   ],
   imports: [
     BrowserModule,

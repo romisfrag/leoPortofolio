@@ -23,10 +23,12 @@
   display: grid;
   padding-left: 4%;
   grid-column-gap: 3%;
-  grid-row-gap: 2%;
+  // Je ne sais pas pk mais si je met un % dans cette propriété ça bug
+  grid-row-gap: 35px;
   grid-template-columns: 30% 30% 30%;
   // grid-template-rows: 30% 30% 30%;
-  grid-template-rows: max-content max-content max-content;
+  // grid-template-rows: max-content;
+  // grid-auto-rows: max-content;
 }
 
 
@@ -35,7 +37,7 @@
   /* grid-column: ($index % 3) / (($index + 2) % 3);
   grid-row: 1 / 3; */
   grid-column: 1 / 3;
-  grid-row: 1 / 3;
+  grid-row: 2 / 4;
 }
 
 .elementGridPaysage {
