@@ -23,6 +23,16 @@ export class ImageGaleryComponent implements OnInit {
 
   ngOnInit() {
     this.listeProjets = this.projetsService.getListeProjetFiltre(this.filtre);
+    if (this.filtre.includes('accueil')) {
+      let m = this.listeProjets.length;
+      while (m > 0) {
+        const i = Math.floor(Math.random() * m--);
+        const t = this.listeProjets[m];
+        this.listeProjets[m] = this.listeProjets[i];
+        this.listeProjets[i] = t;
+      }
+    }
+    console.log('liste Projet : ' + this.listeProjets);
   }
 
   public getAndChangeGauche() {

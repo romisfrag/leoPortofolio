@@ -24,6 +24,7 @@ import { ProjetImageGalerieComponent } from './projet-image-galerie/projet-image
 import { ProjetFooterComponent } from './projet-footer/projet-footer.component';
 import { ProfilComponent } from './profil/profil.component';
 import { CreditComponent } from './credit/credit.component';
+import { FooterCopyrightComponent } from './footer-copyright/footer-copyright.component';
 
 
 
@@ -56,7 +57,8 @@ const appRoutes: Routes = [
     UxComponent,
     ProjetFooterComponent,
     ProfilComponent,
-    CreditComponent
+    CreditComponent,
+    FooterCopyrightComponent
   ],
   imports: [
     BrowserModule,
