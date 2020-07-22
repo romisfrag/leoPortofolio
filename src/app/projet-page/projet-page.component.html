@@ -9,7 +9,10 @@
     </div>
   </div>
   <div class="containerDescription">
-    {{ projet.description }}
+    <div *ngFor="let str of descriptionArray">
+      <br>
+      {{ str }}
+    </div>
   </div>
 
   <div [class.containerPhotoPortrait]="projet.portrait" [class.containerPhotoPaysage]="!projet.portrait">

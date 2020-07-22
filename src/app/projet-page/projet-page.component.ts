@@ -15,6 +15,7 @@ export class ProjetPageComponent implements OnInit, AfterViewInit {
   sticky = false;
   projet: Projet;
   elementPosition: any;
+  descriptionArray: string[];
 
 
   constructor(private router: Router, private projetsService: ProjetsService) {
@@ -22,6 +23,7 @@ export class ProjetPageComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
+    this.descriptionArray = this.projet.description.split('<br>');
   }
 
   ngAfterViewInit() {

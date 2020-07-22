@@ -16,7 +16,8 @@ export class ProjetsService {
       legendeTexte: 'Elisa Pineau',
       description: 'ceci est la description du projet addias il faut voir si je peux faire des retour a la' +
       'ligne quand la ligne est trop longue tatatatatatijdsfjsdhfsjdhfisjfdhisdhf et maintenant un ' +
-      'retour a la ligne voulu <br> jespere que ça a marche',
+      'retour a la ligne voulu <br> jespere que ça a marche et mnt une sconde ligne <br> et une troisieme <br> ' +
+      'et une quatrieme <br> la derniere',
       templateAgencementPhotos: 0,
       nombrePhotos: 8,
       client: 'bvb',
